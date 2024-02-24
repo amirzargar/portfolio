@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amir Zargar</title>
+  </head>
+  <body>
+    <!-- Main container of the whole site starts here -->
+    <div class="container flex">
+
+      <!-- Scroll button to top starts here -->
+       <div class="scrollToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+       </div>
+
+
+      <!-- header Section starts here -->
+      <header class="header flex">
+
+        <!-- LOGO SECTION -->
+        <a href="#" class="logo">
+          <span class="drop-cap">A</span>mir&nbsp;
+          <span class="drop-cap">Z</span>argar
+        </a>
+
+        <!-- day night icons -->
+        <!-- <div class="day-night">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            class="moon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            class="sun"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+            />
+          </svg>
+        </div> -->
+
+        <!-- day night slider toggle switch -->
+         <div class="switch-wraper flex">
+           <input type="checkbox" id="darkmode-toggle">
+           <label for="darkmode-toggle" class="darkmode-label">
+              
+            <div class="ball"></div>
+            <div class="ball-icon flex">
+              <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            class="sun flex"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            class="moon flex"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+            />
+          </svg>
+          
+            </div>
+
+
+           </label>
+
+         </div>
+
+         <!-- navbar code here for Desktop Mode  -->
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#skills">Skills </a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact </a></li>
+            <!-- <span></span> -->
+          </ul>
+        </nav>
+
+
+        <!-- hamburger navbar for smaller Screens -->
+        <div class="hamburger-navbar">
+          <div class="hamburger-icon" onclick="toggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu-links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About </a></li>
+              <li><a href="#skills">Skills </a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact </a></li>
+              <!-- <span></span> -->
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- =============================================================== 
+                            HOME SECTION
+           ============================================================= -->
+      <section id="home" class="flex">
+        
+         
+        <!-- author picture html starts here -->
+         <article class="pic-wraper ">
+
+           <div class="pic-container flex">
+            <img src="resources/hero.jpg" alt="Amir Zargar's profile image" class="mypic">
+            <h2>Mern Stack<br>
+              <span>Developer</span>
+            </h2>
+            <a href="#">Hire me</a>
+            </div>
+          </article>
+         
+         
+          <!-- Text about the Author  -->
+         <article class="text-wraper">
+
+          <p class="p-text">Hello, i'm</p>
+        <h1 class="tittle-text">Amir Zargar</h1> </h1>
+        <h2 class="h2-text">I am</h2>
+        <h2 class="h2-text"><span id="text"></span></h2>
+        <br><br>
+
+        <!-- Buttons of home section  -->
+         <div class="btn-container flex">
+          <button class="btn" onclick="window.open('./resources/resume.pdf')">Download CV</button>
+          <button class="btn" onclick="location.href('./#contact')">Contact</button>
+          <button class="new-btn">click Me</button>
+          <button class="new-btn2">click Me</button>
+         </div>
+
+         <!-- social icons of the Author -->
+         <div class="social-container flex">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+         </div>
+        </article>
+        
+      </section>
+
+
+
+
+      <!-- =============================================================== 
+                          ABOUT SECTION
+           ============================================================= -->
+      <section id="about" class="flex">
+
+        <!-- Left side of About section -->
+       <div class="about-Left-container flex"> 
+         
+        <span>Let me Introduce myself</span>
+        <h2 class="style-h2">
+          About Me
+        </h2>
+
+        <h2 class="style-h3">
+          Developer's Tale
+        </h2>
+
+        <p class="style-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, itaque quaerat commodi explicabo excepturi veritatis eius accusantium aspernatur assumenda neque! Soluta reiciendis amet assumenda ducimus dolorem quidem aspernatur tenetur suscipit.
+        </p>
+
+        <div class="btn-box">
+          <a href="#" class="btn">
+            read me
+
+          </a>
+        </div>
+
+      
+      </div>
+
+        <!-- Right side of About section -->
+       <div class="about-Right-container flex"> 
+        <div class="img-box ">
+          <div class="circle-blur">
+            
+          </div>
+          <img src="resources/hero-bg-removed.png" alt="hero">
+          
+        </div>
+
+        <div class="liquid-box">
+          
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+                <stop offset="100%" style="stop-color: rgb(94, 168, 228);"></stop>
+              </linearGradient>
+            </defs>
+            <path  fill="url(#gradient)">
+              <animate attributeName="d" dur="10s" repeatCount="indefinite" 
+              values="M427.5,301Q427,352,384,379.5Q341,407,295.5,446Q250,485,200,454Q150,423,98,395.5Q46,368,53,309Q60,250,75.5,204Q91,158,118.5,114Q146,70,198,55Q250,40,309,43Q368,46,414.5,87Q461,128,444.5,189Q428,250,427.5,301Z;
+              M454,297Q413,344,385.5,390.5Q358,437,304,442Q250,447,191,451Q132,455,93,409Q54,363,59.5,306.5Q65,250,57.5,192.5Q50,135,88.5,85.5Q127,36,188.5,52.5Q250,69,303,68Q356,67,398.5,103.5Q441,140,468,195Q495,250,454,297Z;
+              M445.5,309Q454,368,399,390.5Q344,413,297,437Q250,461,195.5,450Q141,439,113,392Q85,345,66,297.5Q47,250,42,188.5Q37,127,81.5,81Q126,35,188,32Q250,29,306.5,41.5Q363,54,414,90Q465,126,451,188Q437,250,445.5,309Z;
+              M439,306.5Q446,363,397.5,392Q349,421,299.5,457.5Q250,494,196.5,465Q143,436,112,392Q81,348,51,299Q21,250,33.5,191Q46,132,86,83.5Q126,35,188,39Q250,43,307,48Q364,53,394,101Q424,149,428,199.5Q432,250,439,306.5Z;
+              M458.5,305.5Q443,361,401,400Q359,439,304.5,442Q250,445,199.5,435.5Q149,426,112.5,388Q76,350,59.5,300Q43,250,66.5,204Q90,158,123,123Q156,88,203,54Q250,20,309,32.5Q368,45,405,92Q442,139,458,194.5Q474,250,458.5,305.5Z;
+              M435,300.5Q424,351,396,403Q368,455,309,472.5Q250,490,197,461.5Q144,433,95.5,400Q47,367,41,308.5Q35,250,66,206Q97,162,120,113.5Q143,65,196.5,66Q250,67,301,70Q352,73,405,101.5Q458,130,452,190Q446,250,435,300.5Z;
+              M451.5,300.5Q425,351,383.5,380Q342,409,296,434.5Q250,460,202.5,437.5Q155,415,112,385Q69,355,60.5,302.5Q52,250,47,190Q42,130,86,86Q130,42,190,37Q250,32,297.5,59Q345,86,388.5,115.5Q432,145,455,197.5Q478,250,451.5,300.5Z;
+              M427.5,301Q427,352,384,379.5Q341,407,295.5,446Q250,485,200,454Q150,423,98,395.5Q46,368,53,309Q60,250,75.5,204Q91,158,118.5,114Q146,70,198,55Q250,40,309,43Q368,46,414.5,87Q461,128,444.5,189Q428,250,427.5,301Z;"></animate>
+            </path>
+          </svg>
+
+        </div>
+
+        <div class="liquid-box2">
+          
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+            <defs>
+              <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+                <stop offset="100%" style="stop-color: rgb(199, 218, 233);"></stop>
+              </linearGradient>
+            </defs>
+            <path  fill="url(#gradient2)">
+              <animate attributeName="d" dur="10s" repeatCount="indefinite" 
+              values="M427.5,301Q427,352,384,379.5Q341,407,295.5,446Q250,485,200,454Q150,423,98,395.5Q46,368,53,309Q60,250,75.5,204Q91,158,118.5,114Q146,70,198,55Q250,40,309,43Q368,46,414.5,87Q461,128,444.5,189Q428,250,427.5,301Z;
+              M454,297Q413,344,385.5,390.5Q358,437,304,442Q250,447,191,451Q132,455,93,409Q54,363,59.5,306.5Q65,250,57.5,192.5Q50,135,88.5,85.5Q127,36,188.5,52.5Q250,69,303,68Q356,67,398.5,103.5Q441,140,468,195Q495,250,454,297Z;
+              M445.5,309Q454,368,399,390.5Q344,413,297,437Q250,461,195.5,450Q141,439,113,392Q85,345,66,297.5Q47,250,42,188.5Q37,127,81.5,81Q126,35,188,32Q250,29,306.5,41.5Q363,54,414,90Q465,126,451,188Q437,250,445.5,309Z;
+              M439,306.5Q446,363,397.5,392Q349,421,299.5,457.5Q250,494,196.5,465Q143,436,112,392Q81,348,51,299Q21,250,33.5,191Q46,132,86,83.5Q126,35,188,39Q250,43,307,48Q364,53,394,101Q424,149,428,199.5Q432,250,439,306.5Z;
+              M458.5,305.5Q443,361,401,400Q359,439,304.5,442Q250,445,199.5,435.5Q149,426,112.5,388Q76,350,59.5,300Q43,250,66.5,204Q90,158,123,123Q156,88,203,54Q250,20,309,32.5Q368,45,405,92Q442,139,458,194.5Q474,250,458.5,305.5Z;
+              M435,300.5Q424,351,396,403Q368,455,309,472.5Q250,490,197,461.5Q144,433,95.5,400Q47,367,41,308.5Q35,250,66,206Q97,162,120,113.5Q143,65,196.5,66Q250,67,301,70Q352,73,405,101.5Q458,130,452,190Q446,250,435,300.5Z;
+              M451.5,300.5Q425,351,383.5,380Q342,409,296,434.5Q250,460,202.5,437.5Q155,415,112,385Q69,355,60.5,302.5Q52,250,47,190Q42,130,86,86Q130,42,190,37Q250,32,297.5,59Q345,86,388.5,115.5Q432,145,455,197.5Q478,250,451.5,300.5Z;
+              M427.5,301Q427,352,384,379.5Q341,407,295.5,446Q250,485,200,454Q150,423,98,395.5Q46,368,53,309Q60,250,75.5,204Q91,158,118.5,114Q146,70,198,55Q250,40,309,43Q368,46,414.5,87Q461,128,444.5,189Q428,250,427.5,301Z;"></animate>
+            </path>
+          </svg>
+
+        </div>
+
+        <div class="about-me1">
+          <span>10+</span>
+          <p>Year of Experience</p>
+         </div>
+  
+         <div class="about-me2">
+          <span>100+</span>
+          <p>Projects</p>
+         </div>
+  
+         <div class="about-me3">
+          <span>500+</span>
+          <p>Customers</p>
+         </div>
+       </div> 
+
+              
+      </section>
+      
+
+
+
+      <!-- =============================================================== 
+                          SKILL SECTION
+           ============================================================= -->
+      <section id="skills" class="flex">
+        
+        <!--****** left side of skills ****** -->
+        <div class="skills-left-container flex">
+           
+          <!-- <div class="try-box flex">
+            <div class="try flex"></div>
+            <div class="bot"></div>
+           </div>   -->
+
+           <div class="skills-left-img-container">
+            <img src="resources/hero-bg-removed.png" alt="me">
+
+            <div class="rotate-text flex">
+              <div class="text">
+                <p>I AM FULL STACK DEVELOPER  EXPERT IN MERN</p>
+              </div>
+              
+              <span><i></i></span>
+            </div>
+            
+           </div>
+        </div>
+
+        <!--***** right side of skills **** -->
+        <div class="skills-right-container flex ">
+             
+            <div class="skills-line-container flex">
+              <div class="line flex">
+                <p>HTML</p>
+                <div class="bar">
+                  <div class="line-bar html">
+
+                  </div>
+
+                </div>
+                <h5>85</h5>
+              </div>
+
+              <div class="line flex">
+                <p>CSS</p>
+                <div class="bar">
+                  <div class="line-bar css">
+
+                  </div>
+
+                </div>
+                <h5>75</h5>
+              </div>
+
+
+              <div class="line flex">
+                <p>JS</p>
+                <div class="bar">
+                  <div class="line-bar js">
+
+                  </div>
+
+                </div>
+                <h5>70</h5>
+              </div>
+
+      
+
+
+            </div>
+
+             <!-- circle progress animation -->
+
+             <div class="skills-circle-container flex">
+              <div class="circle-box flex">
+                <div class="dot"></div>
+
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="75" cy="75" r="50" stroke="white" fill="none" style="stroke-dasharray: 251;"></circle>
+                  <text id="text0" x="65" y="80"> 80</text>
+                </svg>
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="circle-box flex">
+                <div class="dot2"></div>
+
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="75" cy="75" r="50" stroke="white" fill="none" style="stroke-dasharray: 230;"></circle>
+                  <text id="text1" x="65" y="80"> 75</text>
+                </svg>
+                <h4>React JS</h4>
+              </div>
+              <div class="circle-box flex"> 
+                <div class="dot3"></div>
+
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="75" cy="75" r="50" stroke="white" fill="none" style="stroke-dasharray:180;"></circle>
+                  <text id="text2" x="65" y="80"> 60</text>
+                </svg>
+                <h4>Node Js</h4>
+             </div>
+             <div class="circle-box flex">
+               <div class="dot4"></div>
+
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="75" cy="75" r="50" stroke="white" fill="none" style="stroke-dasharray: 120;"></circle>
+                  <text id="text4" x="65" y="80"> 50</text>
+                </svg>
+                <h4>Mongo DB</h4>
+             </div>  
+              
+              
+
+             </div>
+        </div>
+       
+        
+            
+           
+        
+
+      </section>
+
+
+      <!-- =============================================================== 
+                          PROJECTS SECTION
+           ============================================================= -->
+
+      <section id="projects" class="flex">
+        
+        <!-- header of project -->
+        <article class="projects-header flex">
+          <h2 class="h2-text">My projects</h2>
+
+          <ul class="projects-categories">
+            <li class="btn new-btn2" data-filter="*">All</li>
+            <li class="btn" data-filter=".frontend">Frontend</li>
+            <li class="btn" data-filter=".backend">Backend</li>
+            <li class="btn" data-filter=".fullstack">Fullstack</li>
+          </ul>
+        </article>
+
+        <!-- projectt container -->
+        <div class="projects-container flex">
+          
+          <article class="projects flex mix frontend" data-tilt data-order="1">
+            <div class="project-img">
+              <img src="resources/d_img1.jpg" alt="" srcset="">
+              </div>
+              <h2>my frontend project</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, beatae!</p>
+
+              <div class="project-links flex">
+                <a href="#" class="new-btn">Demo</a>
+                <a href="#" class="new-btn">Github</a>
+              </div>
+
+          </article>
+
+          <article class="projects flex mix backend" data-tilt data-order="2">
+            <div class="project-img">
+              <img src="resources/d_img2.jpg" alt="" srcset="">
+              </div>
+              <h2>my backend project</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, beatae!</p>
+
+              <div class="project-links flex">
+                <a href="#" class="new-btn">Demo</a>
+                <a href="#" class="new-btn">Github</a>
+              </div>
+
+          </article>
+
+
+          <article class="projects flex mix frontend" data-tilt data-order="3">
+            <div class="project-img">
+              <img src="resources/d_img1.jpg" alt="" srcset="">
+              </div>
+              <h2>my frontend project</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, beatae!</p>
+
+              <div class="project-links flex">
+                <a href="#" class="new-btn">Demo</a>
+                <a href="#" class="new-btn">Github</a>
+              </div>
+
+          </article>
+
+
+
+
+          <article class="projects flex mix backend" data-tilt data-order="4">
+            <div class="project-img">
+              <img src="resources/d_img2.jpg" alt="" srcset="">
+              </div>
+              <h2>my backend project</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, beatae!</p>
+
+              <div class="project-links flex">
+                <a href="#" class="new-btn">Demo</a>
+                <a href="#" class="new-btn">Github</a>
+              </div>
+
+          </article>
+
+
+          <article class="projects flex mix backend" data-tilt data-order="5">
+            <div class="project-img">
+              <img src="resources/d_img1.jpg" alt="" srcset="">
+              </div>
+              <h2>my backend project</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, beatae!</p>
+
+              <div class="project-links flex">
+                <a href="#" class="new-btn">Demo</a>
+                <a href="#" class="new-btn">Github</a>
+              </div>
+
+          </article>
+
+
+
+          <article class="projects flex mix fullstack" data-tilt data-order="6">
+            <div class="project-img">
+              <img src="resources/d_img2.jpg" alt="" srcset="">
+              </div>
+              <h2>my fullstack project</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, beatae!</p>
+
+              <div class="project-links flex">
+                <a href="#" class="new-btn">Demo</a>
+                <a href="#" class="new-btn">Github</a>
+              </div>
+
+          </article>
+
+
+         
+        
+        </div>
+      </section>
+ 
+
+      <!-- =============================================================== 
+                          CONTACT SECTION
+           ============================================================= -->
+      <section id="contact" class="flex">
+         
+         <div class="contact-container flex">
+           
+          <!-- container for both social icons & form -->
+          <div class="contact-box flex">
+            
+
+            <!-- container for social icons  -->
+            <div class="contact-icon-container flex">
+
+             <ul class="contact-list flex">
+                
+                 <!-- Email Icon -->
+                <li class="flex">
+                  <a href="mailto:zargaraaamir@gmail.com?subject=feedback" class="contact-list" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </li>
+               
+                <!-- Fb Messenger Icon -->
+                <li class="flex">
+                  <a href="https://m.me//zargaraaamir" class="contact-list" target="_blank">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                  </a>
+                </li>
+
+                 <!-- WhatsApp Messenger Icon -->
+                 <li class="flex">
+                  <a href="https://wa.me/+917006604551" class="contact-list" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+
+
+                <!-- Telephone Icon -->
+                <li class="flex">
+                  <a href="tel:+917006604551" class="contact-list" target="_blank">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                </li>
+
+
+             </ul>
+
+            </div>
+
+
+            <!-- container for contact form  -->
+            <div class="contact-form-container flex">
+              <div class="contant-main-text">
+                <h2 class="h2-text">Contact me</h2>
+                <span>get in touch with me</span>
+
+                <form action="https://formsubmit.co/zargaraaamir@gmail.com?subject=feedback" class="contact-form flex" method="post">
+
+                 <div class="input-box flex">
+                  <input type="text" name="first-name" placeholder="First Name" required>
+                  <input type="text" name="last-name" placeholder="Last Name" required>
+                 </div>
+
+                 <input type="email" name="email" placeholder="Email" required>
+                 <input type="text" name="subject" placeholder="Subject" required>
+                 <textarea name="Message" rows="5"></textarea>
+
+                 <div class="formbtn">
+                  <button type="submit" class="btn">Send Message</button>
+                  <button type="reset" class="btn">Reset</button>
+                 </div>
+
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+         </div>
+
+
+
+      </section>
+
+
+      <!-- *******************************
+                    Footer
+            ****************************** -->
+
+
+      <footer id="footer" class="flex ">
+        <div class="waves">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+         
+        <ul class="footer-icon flex">
+                
+          <!-- Email Icon -->
+         <li class="flex">
+           <a href="mailto:zargaraaamir@gmail.com?subject=feedback" class="contact-list" target="_blank">
+             <i class="fa-solid fa-envelope"></i>
+           </a>
+         </li>
+        
+         <!-- Fb Messenger Icon -->
+         <li class="flex">
+           <a href="https://m.me//zargaraaamir" class="contact-list" target="_blank">
+             <i class="fa-brands fa-facebook-messenger"></i>
+           </a>
+         </li>
+
+          <!-- WhatsApp Messenger Icon -->
+          <li class="flex">
+           <a href="https://wa.me/+917006604551" class="contact-list" target="_blank">
+             <i class="fa-brands fa-whatsapp"></i>
+           </a>
+         </li>
+
+
+         <!-- Telephone Icon -->
+         <li class="flex">
+           <a href="tel:+917006604551" class="contact-list" target="_blank">
+             <i class="fa-solid fa-phone"></i>
+           </a>
+         </li>
+
+          <!-- LinkedIn Icon -->
+          <li class="flex">
+            <a href="https://www.LinkedIn.com" class="contact-list" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+
+          <!-- Github Icon -->
+          <li class="flex">
+            <a href="https://www.github.com" class="contact-list" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+
+
+      </ul>
+      <ul class="footer-menu flex">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About </a></li>
+        <li><a href="#skills">Skills </a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact </a></li>
+      </ul>
+
+      <p>Copyright &#169 2024 by Amir Zargar || All rights reserved</p>
+      
+
+      </footer>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="mix/dist/mixitup.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
